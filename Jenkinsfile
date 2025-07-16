@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent test
 // veera
     environment {
         AWS_REGION = 'ap-south-1'

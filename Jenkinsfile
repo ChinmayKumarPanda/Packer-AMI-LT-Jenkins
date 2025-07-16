@@ -2,9 +2,9 @@ pipeline {
     agent any
 // veera
     environment {
-        AWS_REGION = 'us-east-1'
-        LAUNCH_TEMPLATE_ID = 'lt-04f4d7cd88876c81d'
-        ASG_NAME = "ASG"
+        AWS_REGION = 'ap-south-1'
+        LAUNCH_TEMPLATE_ID = 'lt-0eb90fe1cc5764c89'
+        ASG_NAME = "PACKER_ASG"
         
     }
 

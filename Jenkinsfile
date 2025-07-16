@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'node1' }
+    agent { label 'test' }
 // veera
     environment {
         AWS_REGION = 'ap-south-1'

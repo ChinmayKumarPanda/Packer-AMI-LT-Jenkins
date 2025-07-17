@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     def log = readFile('packer.log')
-                    def matcher = log =~ /AMI:(ami-[0-9a-f]+)/
+                def matcher = log =~ /AMI:\s+(ami-[0-9a-f]+)/
                     if (matcher.find()) {
                         env.NEW_AMI_ID = matcher.group(1)
                         echo "New AMI ID: ${env.NEW_AMI_ID}"
